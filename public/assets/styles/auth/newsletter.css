@@ -1,0 +1,88 @@
+.page__content__header {
+    display: flex;
+    column-gap: .8rem;
+}
+
+.btn, .btn:hover {
+    text-decoration: none;
+    padding: .8rem 1.3rem;
+    border-radius: .5rem;
+}
+
+.sned__message {
+    color: #fff;
+    background-color: var(--primary);
+}
+
+.users {
+    border: 3px solid var(--primary);
+    color: var(--primary);
+}
+
+input.input__form {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+textarea {
+    font-size: 1rem;
+    font-family: outfit;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+thead {
+    background-color: var(--primary-dark);
+    color: #fff;
+    font-weight: 400;
+}
+
+tr th {
+    padding: .8rem;
+    border: 1px solid #ccc;
+}
+
+tr th:first-of-type {
+    width: 15%;
+}
+
+tr td {
+    padding: .7rem;
+    border: 1px solid #111;
+}
+
+tr td:first-of-type {
+    width: 15%;
+    text-align: center;
+}
+
+.message__container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+}
+
+.message__item {
+    flex-grow: 1;
+    flex-basis: 500px;
+    border: 2px solid #222;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.message__date {
+    font-size: .8rem;
+    font-weight: 400;
+    opacity: .8;
+    margin-bottom: .7rem;
+}
+
+.message__title {
+    font-size: 1.5rem;
+}

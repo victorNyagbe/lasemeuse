@@ -1,0 +1,131 @@
+.contact-header-container {
+    background-image: url('../../images/printer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+}
+
+.contact-header-cover {
+    color: white;
+}
+
+.contact-header-cover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    z-index: -1;
+}
+
+.contact-left h5 {
+    font-size: 1.1rem;
+    /* font-family: outfit-bold; */
+    font-weight: 400;
+}
+
+.contact-left form {
+    margin-top: 1.3rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-family: outfit-bold;
+    display: block;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    border: 1.5px solid #ddd;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.form-group textarea {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1.5px solid #ddd;
+}
+
+form button {
+    all: unset;
+    display: block;
+    width: 100%;
+    font-family: outfit-bold;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+
+.map-container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.other-contact {
+    margin-top: 1rem;
+}
+
+.other-contact h5 {
+    font-size: 1.2rem;
+    font-family: outfit-bold;
+    margin-bottom: 1.1rem;
+}
+
+.other-contact ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.other-contact ul li {
+    margin-bottom: 1rem;
+}
+
+.other-contact li i {
+    margin-right: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .contact-container {
+        display: flex;
+        column-gap: 3rem;
+    }
+
+    .contact-left {
+        flex: 1 1 55%;
+    }
+
+    .contact-right {
+        flex: 1 1 40%;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+}
+

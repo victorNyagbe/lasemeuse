@@ -1,0 +1,46 @@
+.invoice__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.invoice__item {
+    border: 3px solid var(--primary-500);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.invoice__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoice__left {
+    display: flex;
+    row-gap: .3rem;
+    flex-direction: column;
+}
+
+.invoice__id {
+    font-size: .8rem;
+}
+
+.invoice__name {
+    font-weight: 600;
+}
+
+.invoice__phone {
+    font-size: .8rem;
+}
+
+.invoice__body {
+    margin-top: 1.5rem;
+}
+
+.declared {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+}
